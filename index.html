@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"
+  ></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="container">
+      <h1>Weather Dashboard</h1>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                  <div class="searchSection">
+                    <h2>Search for a City:</h2>
+                    <form id="searchForm">
+                    <input
+                        id="searchInput"
+                        class="formInput"
+                        type="text"
+                        placeholder="  San Diego"/>
+                    <button class="searchBtn">Search</button>
+                    </form>
+                  </div>
+                    <hr>
+                  <div class="searchHistory">
+                  </div>
+                </div>
+                <div class="mainContainer col-9 column">
+                    <div id="weatherInfo" class="container">
+                        <div id="location"></div>
+                    </div>
+                        <h1 class="hidden forecast">5 Day Forecast</h1>
+                        <div id="dayForecast" class="row">
+
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+        
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/JS.js"></script>
+  </body>
+</html>
